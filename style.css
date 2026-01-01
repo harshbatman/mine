@@ -127,6 +127,7 @@ h1 {
 .shiny-text {
     /* Permanent Shiny White */
     background: linear-gradient(180deg, #FFFFFF 20%, #e2e8f0 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.4));
@@ -727,9 +728,4 @@ footer {
     70% {
         transform: scale(1);
     }
-}
-
-.white-home {
-    color: transparent;
-    text-shadow: 0 0 0 white;
 }
