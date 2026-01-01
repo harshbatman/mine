@@ -321,41 +321,112 @@ h1 {
 
 /* Footer */
 footer {
-    padding: 5rem 5%;
-    text-align: center;
+    padding: 5rem 5% 2rem;
     background: #000;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+    /* Ensure footer takes up space to push content */
+}
+
+.footer-content {
+    flex-grow: 1;
+    /* Allow content to grow and push bottom text down */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .footer-content h2 {
     font-size: 2.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
+    text-align: center;
 }
 
-.footer-content p {
-    color: var(--text-muted);
-    margin-bottom: 2.5rem;
+/* Contact Cards */
+.contact-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    width: 100%;
+    max-width: 1000px;
 }
 
-.footer-cta {
-    display: inline-block;
-    padding: 1rem 3rem;
-    border: 1px solid var(--accent);
-    color: var(--accent);
-    border-radius: 50px;
+.contact-card {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 450px;
     transition: var(--transition);
-    margin-bottom: 4rem;
 }
 
-.footer-cta:hover {
-    background: var(--accent);
-    color: #000;
+.contact-card:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: var(--accent);
+    transform: translateY(-5px);
+}
+
+.card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: rgba(100, 50, 255, 0.1);
+    /* Subtle purple tint from image */
+    border-radius: 12px;
+    border: 1px solid rgba(130, 80, 255, 0.2);
+    color: #a78bfa;
+}
+
+.card-details {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.card-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    letter-spacing: 1px;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+}
+
+.card-link {
+    color: var(--text-main);
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.card-link:hover {
+    color: var(--accent);
+}
+
+.footer-spacer {
+    flex-grow: 1;
 }
 
 .footer-bottom {
     font-size: 1.1rem;
     color: #888;
-    margin-top: 2rem;
+    margin-top: auto;
+    /* Push to bottom */
+    padding-top: 3rem;
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    /* Optional separator line */
 }
 
 @media (max-width: 768px) {
