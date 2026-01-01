@@ -251,9 +251,7 @@ h1 {
 /* Footer */
 footer {
     padding: 5rem 5% 2rem;
-    background: #000000;
-    /* Clean black for footer */
-    background: linear-gradient(to top, #000000 0%, rgba(0, 0, 0, 0.4) 100%);
+    background: linear-gradient(to top, #030014 0%, rgba(3, 0, 20, 0.8) 100%);
     backdrop-filter: blur(20px);
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     display: flex;
@@ -567,17 +565,7 @@ footer {
     z-index: 1;
 }
 
-/* Footer */
-footer {
-    padding: 5rem 5% 2rem;
-    background: linear-gradient(to top, #000000 0%, rgba(0, 0, 0, 0.4) 100%);
-    backdrop-filter: blur(20px);
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
-    display: flex;
-    flex-direction: column;
-    min-height: 50vh;
-    /* Ensure footer takes up space to push content */
-}
+/* Secondary Footer Rule Removed (Consolidated above) */
 
 .footer-content {
     flex-grow: 1;
