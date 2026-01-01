@@ -366,6 +366,8 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 10;
+    /* Ensure it sits above the border mask */
     animation: rotate-house 20s linear infinite;
 }
 
