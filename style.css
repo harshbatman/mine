@@ -259,26 +259,26 @@ footer {
 
 .feature-card {
     background: rgba(255, 255, 255, 0.05);
-    /* Visible glass card */
-    padding: 1.5rem;
-    /* Reduced padding */
+    background: rgba(10, 10, 10, 0.6);
+    /* Match the dark reference */
+    padding: 2rem;
     border-radius: 16px;
-    /* Slightly smaller radius for smaller feel */
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    /* Stronger border */
+    border: 1px solid rgba(255, 255, 255, 0.1);
     transition: var(--transition);
     text-align: center;
     backdrop-filter: blur(10px);
-    height: auto;
-    /* Allow aspect ratio to drive height */
-    aspect-ratio: 1 / 1;
-    /* Force Square */
+    width: 100%;
+    max-width: 280px;
+    /* Reduced size to match 4-card look */
+    min-height: 250px;
+    /* Consistent height */
+    margin: 0 auto;
+    /* Center in grid cell */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* Center vertically */
     align-items: center;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
 .feature-card:hover {
