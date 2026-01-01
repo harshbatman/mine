@@ -234,7 +234,13 @@ h1 {
 /* Features Background Adjustment */
 .features-section {
     background: transparent;
-    /* Remove solid gradient to let body shine */
+    padding: 5rem 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    width: 100%;
+    justify-items: center;
+    /* Center cards in their slots */
 }
 
 /* Footer */
