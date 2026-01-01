@@ -260,8 +260,10 @@ footer {
 .feature-card {
     background: rgba(255, 255, 255, 0.05);
     /* Visible glass card */
-    padding: 2.5rem;
-    border-radius: 20px;
+    padding: 1.5rem;
+    /* Reduced padding */
+    border-radius: 16px;
+    /* Slightly smaller radius for smaller feel */
     border: 1px solid rgba(255, 255, 255, 0.15);
     /* Stronger border */
     transition: var(--transition);
