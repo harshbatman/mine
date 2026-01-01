@@ -258,21 +258,22 @@ footer {
 }
 
 .feature-card {
-    background: rgba(255, 255, 255, 0.08);
-    /* More visible card bg */
+    background: rgba(0, 0, 0, 0.3);
+    /* Darker, premium card bg */
     padding: 2.5rem;
     border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    /* Subtle border */
     transition: var(--transition);
     text-align: center;
     backdrop-filter: blur(10px);
-    /* Add glass effect */
     height: 100%;
-    /* Match heights */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    /* Align content to top */
     align-items: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .feature-card:hover {
