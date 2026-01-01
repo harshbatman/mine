@@ -134,8 +134,8 @@ h1 {
 
 .highlight {
     color: var(--accent);
-    -webkit-text-fill-color: var(--accent);
-    text-shadow: 0 0 30px var(--accent-glow);
+    /* Remove glow/shine effects */
+    text-shadow: none;
 }
 
 .subtitle {
