@@ -122,6 +122,9 @@ h1 {
     line-height: 1.1;
     margin-bottom: 1.5rem;
     font-weight: 700;
+}
+
+.shiny-text {
     /* Permanent Shiny White */
     background: linear-gradient(180deg, #FFFFFF 20%, #e2e8f0 100%);
     -webkit-background-clip: text;
