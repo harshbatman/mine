@@ -735,3 +735,8 @@ footer {
         transform: scale(1);
     }
 }
+
+.white-home {
+    color: transparent;
+    text-shadow: 0 0 0 white;
+}
