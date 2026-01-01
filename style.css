@@ -358,11 +358,51 @@ h1 {
         linear-gradient(135deg, #3b82f6 0%, #a78bfa 100%) border-box;
 }
 
+.home-scene {
+    position: relative;
+    width: 200px;
+    /* Adjust based on emoji size */
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: rotate-house 20s linear infinite;
+}
+
 .home-emoji {
     font-size: 8rem;
-    z-index: 2;
-    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.5));
-    animation: rotate-house 20s linear infinite;
+    position: relative;
+    z-index: 5;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
+    /* Removed animation from here as it's now on scene */
+}
+
+/* Green base grass */
+.grass-base {
+    position: absolute;
+    bottom: 20px;
+    width: 140px;
+    height: 80px;
+    background: #84cc16;
+    /* Lime/Green */
+    border-radius: 50%;
+    transform: rotate(-10deg);
+    z-index: 1;
+    box-shadow: inset 0 -5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Tree blob */
+.tree-blob {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    width: 90px;
+    height: 90px;
+    background: #a3e635;
+    /* Lighter Green */
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    z-index: 0;
+    transform: rotate(-15deg);
 }
 
 @keyframes rotate-house {
