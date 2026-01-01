@@ -122,9 +122,18 @@ h1 {
     line-height: 1.1;
     margin-bottom: 1.5rem;
     font-weight: 700;
-    background: linear-gradient(to right, #fff, #aaa);
+    /* Shiny Metallic White Gradient */
+    background: linear-gradient(to right, #FFFFFF 0%, #B0B0B0 25%, #FFFFFF 50%, #B0B0B0 75%, #FFFFFF 100%);
+    background-size: 200% auto;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: shine 5s linear infinite;
+}
+
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
 }
 
 .highlight {
