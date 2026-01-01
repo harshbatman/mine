@@ -269,11 +269,14 @@ footer {
     transition: var(--transition);
     text-align: center;
     backdrop-filter: blur(10px);
-    height: 100%;
+    height: auto;
+    /* Allow aspect ratio to drive height */
+    aspect-ratio: 1 / 1;
+    /* Force Square */
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    /* Align content to top */
+    justify-content: center;
+    /* Center vertically */
     align-items: center;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
 }
