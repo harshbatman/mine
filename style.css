@@ -606,6 +606,30 @@ footer {
     flex-grow: 1;
 }
 
+.footer-social {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.social-link {
+    color: var(--text-muted);
+    transition: var(--transition);
+    padding: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-link:hover {
+    color: #0077b5;
+    /* LinkedIn Blue */
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-3px);
+}
+
 .footer-bottom {
     font-size: 1.1rem;
     color: #888;
