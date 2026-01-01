@@ -84,9 +84,12 @@ a {
     transition: var(--transition);
 }
 
-.cta-button:hover {
-    background: var(--text-main);
-    color: var(--bg-dark);
+.nav-links .cta-button:hover,
+.nav-links .cta-button:active,
+.nav-links .cta-button:focus {
+    background: #ffffff;
+    color: #000000 !important;
+    outline: none;
 }
 
 /* Hero */
@@ -350,8 +353,8 @@ footer {
 }
 
 .footer-bottom {
-    font-size: 0.8rem;
-    color: #555;
+    font-size: 1.3rem;
+    color: #888;
     margin-top: 2rem;
 }
 
