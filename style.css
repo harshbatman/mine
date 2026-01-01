@@ -264,22 +264,19 @@ footer {
 }
 
 .feature-card {
-    background: rgba(255, 255, 255, 0.05);
-    background: rgba(10, 10, 10, 0.6);
-    /* Match the dark reference */
+    background: var(--bg-card);
+    /* Match ecosystem cards exactly */
     padding: 2rem;
     border-radius: 16px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    /* Match subtle border */
     transition: var(--transition);
     text-align: center;
     backdrop-filter: blur(10px);
     width: 100%;
     max-width: 280px;
-    /* Reduced size to match 4-card look */
     min-height: 250px;
-    /* Consistent height */
     margin: 0 auto;
-    /* Center in grid cell */
     display: flex;
     flex-direction: column;
     justify-content: center;
