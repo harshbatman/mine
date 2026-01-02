@@ -674,10 +674,25 @@ footer {
 }
 
 .social-link:hover {
-    color: #0077b5;
-    /* LinkedIn Blue */
-    background: rgba(255, 255, 255, 0.1);
     transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.social-linkedin:hover {
+    color: #0077b5;
+}
+
+.social-instagram:hover {
+    color: #E1306C;
+}
+
+.social-x:hover {
+    color: #ffffff;
+    /* White to stand out on dark bg */
+}
+
+.social-youtube:hover {
+    color: #FF0000;
 }
 
 .footer-bottom {
@@ -738,7 +753,8 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 8rem 5% 0; /* Add top padding to account for fixed navbar */
+    padding: 8rem 5% 0;
+    /* Add top padding to account for fixed navbar */
     position: relative;
 }
 
@@ -834,7 +850,8 @@ footer {
 
 .step-marker {
     position: absolute;
-    left: -2.9rem; /* Center on the line */
+    left: -2.9rem;
+    /* Center on the line */
     top: 0;
     width: 3rem;
     height: 3rem;
