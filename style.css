@@ -690,6 +690,10 @@ footer {
     color: #ffffff;
 }
 
+.social-reddit:hover {
+    color: #FF4500;
+}
+
 .social-youtube:hover {
     color: #FF0000;
 }
