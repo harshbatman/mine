@@ -577,10 +577,15 @@ footer {
     width: 100%;
 }
 
-.footer-content h2,
-.store-section h2 {
+.footer-content h2 {
     font-size: 2.5rem;
     margin-bottom: 3rem;
+    text-align: center;
+}
+
+.store-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
     text-align: center;
 }
 
