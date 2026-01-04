@@ -583,11 +583,7 @@ footer {
     text-align: center;
 }
 
-.store-section h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    text-align: center;
-}
+
 
 /* Contact Cards */
 .contact-cards {
@@ -661,8 +657,18 @@ footer {
     flex-grow: 1;
 }
 
-.footer-social {
+.store-section h2,
+.footer-social-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.footer-social-section {
     margin-top: 3rem;
+}
+
+.footer-social {
     display: flex;
     justify-content: center;
     gap: 1rem;
